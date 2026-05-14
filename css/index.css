@@ -8,6 +8,24 @@ body{
     height: 2000px;
 }
 
+.dev{
+   
+    margin-top: 10px;
+    font-size: 18px;
+    background-color: bisque;
+    width: 2500px;
+    margin-left: 1200px;
+}
+
+@media(max-width:600px){
+    .dev{
+        margin-left: 3px;
+        max-width: 350px;
+        background-color: aqua;
+        text-align: center;
+    }
+}
+
 
 #nav{
     display:flex;
@@ -247,3 +265,48 @@ button:hover{
     }
 }
 
+
+
+.card{
+    display: grid;
+     
+     grid-template-columns: repeat(4,350px);
+     align-items: center;
+     justify-content: center;
+    column-wrap: wrap;
+     
+}
+.card1{
+   
+    padding: 10px;
+     background-color: #e5fbd7;
+     margin-top: 30px;
+     margin-left: 30px;
+     width: 300px;
+     
+}
+.card1 img{
+    width: 200px;
+    margin-left: 30px;
+    margin-top: 30px;
+    height: 200px;
+}
+
+.card p{
+    margin-left: 90px;
+}
+
+.card button{
+    background-color: aquamarine;
+    border-radius: 20px;
+    margin-left: 70px;
+}
+
+@media(max-width:600px){
+    .card{
+         grid-template-columns: repeat(1,350px);
+    }
+    .card button{
+        width: 100px;
+    }
+}
